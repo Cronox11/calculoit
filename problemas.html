@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos2.css">
+    
+    <script>
+        function ocultar(){
+            document.getElementById('oculto').style.display = 'none';
+            document.getElementById('despliegue').style.display = 'block';
+            document.getElementById('problema').style.display = 'none';
+        }
+
+        function despliegue(){
+            document.getElementById('oculto').style.display = 'block';
+            document.getElementById('despliegue').style.display = 'none';
+            document.getElementById('problema').style.display = 'block';
+
+        }
+        function ocultar1(){
+            document.getElementById('oculto1').style.display = 'none';
+            document.getElementById('despliegue1').style.display = 'block';
+            document.getElementById('problema1').style.display = 'none';
+       }
+        function despliegue1(){
+            document.getElementById('oculto1').style.display = 'block';
+            document.getElementById('despliegue1').style.display = 'none';
+            document.getElementById('problema1').style.display = 'block';
+        }
+    </script>
+
+    <title>Fracciones Parciales</title>
+</head>
+<body>
+
+    
+    <div class="contenedor">
+      <section class="s1" id="s1">
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" class="icono" href="index.html"><img src="/img/integral.png" alt="" width="35px" height="50px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link" href="#s2">Integrar de Forma Definida</a>
+                        <a class="nav-link" href="#s10">Determinar el Áreas</a>
+                        <a class="nav-link" href="#s9">Determinar Volúmenes</a>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+                  </nav>  
+      </section>
+        <section class="s2" id="s2">
+                <br>
+                  <h5 class="card-title">Integrar de Forma Definida</h5>
+                  <div class="text">
+                  <p>
+                    Las integrales definidas se caracterizan por resultar en un valor específico o definido. Para encontrar la integral definida de una función, tenemos que evaluar a la integral usando los límites de integración. La integral en el límite inferior es restada de la integral en el límite superior. <br><br>
+
+                    A continuación, resolveremos ejercicios de integrales definidas de funciones. Luego, veremos algunos ejercicios prácticos para aplicar todo lo aprendido sobre este tipo de integrales.
+                    <br><br>
+                  </p>
+                  
+                  <h6>Pasos para la Integración por Fracciones Parciales</h6>
+                  <p>
+                    Supongamos que tenemos la integral <br>
+                    F=∫f(x)dx. Cuando resolvemos esta integral, no obtenemos un valor específico, sino que obtenemos una función de x. <br>
+                    Si es que queremos obtener un valor específico para F, tenemos que evaluarla en intervalos específicos. Entonces, tenemos: <br>
+                    F=(Area hasta x=b)−( Area hasta x=a)
+                    <br>=F(b)−F(a)
+                  </p>
+                  <br>
+                <p class="formula"> 
+                    Esto se escribe como:
+                  <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>F</mi>
+                    <mo>=</mo>
+                    <mstyle displaystyle="true">
+                      <msubsup>
+                        <mo>&#x222B;</mo> <!-- Integral symbol -->
+                        <mi>a</mi>
+                        <mi>b</mi>
+                      </msubsup>
+                      <mi>f</mi>
+                      <mo>(</mo><mi>x</mi><mo>)</mo>
+                      <mo>d</mo><mi>x</mi>
+                    </mstyle>
+                  </math>
+                </p>
+
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>F</mi>
+                        <mo>=</mo>
+                        <mstyle displaystyle="true">
+                          <msubsup>
+                            <mo>&#x222B;</mo> <!-- Integral symbol -->
+                            <mi>a</mi>
+                            <mi>b</mi>
+                          </msubsup>
+                          <mi>f</mi>
+                          <mo>(</mo><mi>x</mi><mo>)</mo>
+                          <mo>d</mo><mi>x</mi>
+                        </mstyle>
+                      </math>
+                      Es una <strong>integral definida</strong>, ya que nos da una respuesta definitiva.
+                      <br>
+                      <code>dx</code> indica que la función debe integrarse con respecto a <code>x</code>. <br>
+                      La constante <code>a</code> es el límite inferior de la integral. <br>
+                      La constante <code>b</code> es el límite superior de la integral. <br>
+                      Entonces, si queremos resolver la integral definida 
+                      <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msubsup>
+                          <mo>∫</mo>
+                          <mn>0</mn>
+                          <mn>1</mn>
+                        </msubsup>
+                        <mrow>
+                          <mn>2</mn>
+                          <mi>x</mi>
+                          <mi>d</mi>
+                          <mi>x</mi>
+                        </mrow>
+                      </math> 
+                </p>
+                <p>Paso 1: Encontrar la integral de la función y usar corchetes para encerrar a la expresión integrada y para expresar los límites de integración. En este caso, tenemos:</p>
+                <p class="pasos-form"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mn>2</mn><mi>x</mi><mi>d</mi><mi>x</mi><mo>=</mo><mo stretchy="false">[</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><msubsup><mo stretchy="false">]</mo><mn>0</mn><mn>1</mn></msubsup></mrow><annotation encoding="application/x-tex">  \int_{0}^{1} 2xdx=[x^2+c]_{0}^{1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.3648em; vertical-align: -0.3558em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right: 0.1945em; position: relative; top: -0.0006em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.009em;"><span class="" style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span><span class="" style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.3558em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">2</span><span class="mord mathnormal">x</span><span class="mord mathnormal">d</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -2.4519em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.2481em;"><span class=""></span></span></span></span></span></span></span></span></span></span></p>
+
+                <p>Paso 2: Evaluar a la función en sus límites superior e inferior. La función en el límite superior es restada de la función en el límite inferior. Entonces, tenemos:</p>
+                 <p class="pasos-form"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><msubsup><mo stretchy="false">]</mo><mn>0</mn><mn>1</mn></msubsup><mo>=</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>1</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>0</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">  [x^2+c]_{0}^{1}=[(1)^2+c]-[(0)^2+c]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -2.4519em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.2481em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[(</span><span class="mord">1</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[(</span><span class="mord">0</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span></span></span></span></span></p>
+                <p>Paso 3: Simplificar hasta obtener un único valor numérico:</p>
+                <p class="pasos-form"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>1</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>0</mn><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex"> =[(1)^2+c]-[(0)^2+c]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[(</span><span class="mord">1</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[(</span><span class="mord">0</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span></span></span></span></span></p>
+                <p class="pasos-form"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo stretchy="false">[</mo><mn>1</mn><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mn>0</mn><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex"> =[1+c]-[0+c]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">1</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span></span></span></span></span></p>
+                <p class="pasos-form"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex"> =1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">1</span></span></span></span></span></p>
+
+                <p>Observamos que las constantes de integración fueron canceladas. Por esta razón, es normal excluir las constantes de integración cuando estamos trabajando con integrales definidas.
+                </p>
+                </div>    
+        </section>
+        <section class="s8" id="s3">
+            <h5 class="card-title">Ejercicios de Integración Definida</h5>
+            <div class="text">
+                <div class="problema1d">
+                    <p>Encuentra el resultado de la integral definida <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">  \int_{0}^{2} 4x^3dx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.3648em; vertical-align: -0.3558em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right: 0.1945em; position: relative; top: -0.0006em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.009em;"><span class="" style="top: -2.3442em; margin-left: -0.1945em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span><span class="" style="top: -3.2579em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.3558em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">4</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mord mathnormal">d</span><span class="mord mathnormal">x</span></span></span></span></span>.</p>
+
+                <div class="definidaej1">
+                     <p>SOLUCION</p>
+                     <p id="despliegue" onclick="despliegue()">+</p>
+                     <p id="oculto" onclick="ocultar()">-</p>
+                </div>
+
+                <div role="region" aria-expanded="true" class="problema" id="problema">
+
+                    <p>Para resolver esta integral definida, tenemos que empezar integrando la expresión y usar corchetes para indicar los límites de integración:</p>
+                    
+                    
+                    
+                    <p class="pasos-ej"><span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mi>d</mi><mi>x</mi><mo>=</mo><mo stretchy="false">[</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mi>c</mi><msubsup><mo stretchy="false">]</mo><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\int_{0}^{2} 4x^3dx=[x^4+c]_{0}^{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 2.476em; vertical-align: -0.9119em;"></span><span class="mop"><span class="mop op-symbol large-op" style="margin-right: 0.4445em; position: relative; top: -0.0011em;"></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.564em;"><span class="" style="top: -1.7881em; margin-left: -0.4445em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"></span></span></span></span><span class="" style="top: -3.8129em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.9119em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord"></span><span class="mord"><span class="mord mathnormal"></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8641em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span><span class="mord mathnormal"></span><span class="mord mathnormal"></span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel"></span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1.1141em; vertical-align: -0.25em;"></span><span class="mopen"></span><span class="mord"><span class="mord mathnormal"></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8641em;"><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin"></span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1.1141em; vertical-align: -0.25em;"></span><span class="mord mathnormal"></span><span class="mclose"><span class="mclose"></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.8641em;"><span class="" style="top: -2.453em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"></span></span></span></span><span class="" style="top: -3.113em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.247em;"><span class=""></span></span></span></span></span></span></span></span></span></span></span></p>
+                    
+                    
+                    
+                    <p>Ahora, podemos evaluar los límites. La expresión evaluada en el límite inferior es restada de la expresión evaluada en el límite superior:</p>
+                    
+                    
+                    
+                    <p class="pasos-ej"><span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">[</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mi>c</mi><msubsup><mo stretchy="false">]</mo><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>2</mn><msup><mo stretchy="false">)</mo><mn>4</mn></msup><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>0</mn><msup><mo stretchy="false">)</mo><mn>4</mn></msup><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[x^4+c]_{0}^{2}=[(2)^4+c]-[(0)^4+c]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.1141em; vertical-align: -0.25em;"></span></p>
+                    
+                    
+                    
+                    <p>Cuando simplificamos esto tenemos:</p>
+                    
+                    
+                    
+                    <p class="pasos-ej"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>2</mn><msup><mo stretchy="false">)</mo><mn>4</mn></msup><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>0</mn><msup><mo stretchy="false">)</mo><mn>4</mn></msup><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex"> =[(2)^4+c]-[(0)^4+c]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[(</span><span class="mord">2</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[(</span><span class="mord">0</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span></span></span></span></span></p>
+                    
+                    
+                    
+                    <p class="pasos-ej"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo stretchy="false">[</mo><mn>16</mn><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mn>0</mn><mo>+</mo><mi>c</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex"> =[16+c]-[0+c]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">16</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">c</span><span class="mclose">]</span></span></span></span></span></p>
+                    
+                    
+                    
+                    <p class="pasos-ej"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex"> =16</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">16</span></span></span></span></span></p>
+                    
+                    
+                    
+                    <p>Podemos observar que la constante de integración fue eliminada, por lo que podemos omitirla cuando estamos trabajando con integrales definidas.</p>
+                    
+                </div>
+                </div>
+                <br><br>
+                <div class="problema2d">
+                    <p>Resuelve la integral definida <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∫</mo><mn>2</mn><mn>3</mn></msubsup><mo stretchy="false">(</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">  \int_{2}^{3} (6x^2-1) dx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.3648em; vertical-align: -0.3558em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right: 0.1945em; position: relative; top: -0.0006em;"></p>
+                        <div class="definidaej1">
+                            <p>SOLUCION</p>
+                            <p id="despliegue1" onclick="despliegue1()">+</p>
+                            <p id="oculto1" onclick="ocultar1()">-</p>
+                       </div>
+                       <div role="region" aria-expanded="true" class="problema1" id="problema1">
+
+                        <p>Empezamos encontrando la integral a ser evaluada. Mantenemos los límites de integración usando corchetes e ignoramos la constante de integración:</p>
+                        
+                        
+                        
+                        <p class="pasos-ej"><span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mo>∫</mo><mn>2</mn><mn>3</mn></msubsup><mo stretchy="false">(</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mo stretchy="false">[</mo><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mi>x</mi><msubsup><mo stretchy="false">]</mo><mn>2</mn><mn>3</mn></msubsup></mrow><annotation encoding="application/x-tex">\int_{2}^{3} (6x^2-1)dx=[2x^3-x]_{2}^{3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 2.476em; vertical-align: -0.9119em;"></span><span class="mop"><span class="mop op-symbol large-op" style="margin-right: 0.4445em; position: relative; top: -0.0011em;"></p>
+                        
+                        
+                        
+                        <p>Ahora que tenemos la integral, podemos evaluarla en los límites dados de la siguiente forma:</p>
+                        
+                        
+                        
+                        <p class="pasos-ej"><span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">[</mo><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mi>x</mi><msubsup><mo stretchy="false">]</mo><mn>2</mn><mn>3</mn></msubsup><mo>=</mo><mo stretchy="false">[</mo><mn>2</mn><mo stretchy="false">(</mo><mn>3</mn><msup><mo stretchy="false">)</mo><mn>3</mn></msup><mo>−</mo><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><msup><mo stretchy="false">)</mo><mn>3</mn></msup><mo>−</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[2x^3-x]_{2}^{3}=[2(3)^3-(3)]-[2(2)^3-(2)]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.1141em; vertical-align: -0.25em;"></span><span class="mopen"></p>
+                        
+                        
+                        
+                        <p>Por último, simplificamos de la siguiente forma:</p>
+                        
+                        
+                        
+                        <p class="pasos-ej"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo stretchy="false">[</mo><mn>2</mn><mo stretchy="false">(</mo><mn>3</mn><msup><mo stretchy="false">)</mo><mn>3</mn></msup><mo>−</mo><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mn>2</mn><mo stretchy="false">(</mo><mn>2</mn><msup><mo stretchy="false">)</mo><mn>3</mn></msup><mo>−</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex"> =[2(3)^3-(3)]-[2(2)^3-(2)]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">2</span><span class="mopen">(</span><span class="mord">3</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord">3</span><span class="mclose">)]</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1.0641em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">2</span><span class="mopen">(</span><span class="mord">2</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.8141em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mclose">)]</span></span></span></span></span></p>
+                        
+                        
+                        
+                        <p class="pasos-ej"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo stretchy="false">[</mo><mn>54</mn><mo>−</mo><mn>3</mn><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mn>16</mn><mo>−</mo><mn>2</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex"> =[54-3]-[16-2]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">54</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">3</span><span class="mclose">]</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">16</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">2</span><span class="mclose">]</span></span></span></span></span></p>
+                        
+                        
+                        
+                        <p class="pasos-ej"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mo stretchy="false">[</mo><mn>51</mn><mo stretchy="false">]</mo><mo>−</mo><mo stretchy="false">[</mo><mn>14</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex"> =[51]-[14]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">51</span><span class="mclose">]</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord">14</span><span class="mclose">]</span></span></span></span></span></p>
+                        
+                        
+                        
+                        <p class="pasos-ej"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>37</mn></mrow><annotation encoding="application/x-tex"> =37</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">37</span></span></span></span></span></p><div class="neuro-contenido_3" style="margin-left: auto; margin-right: auto; text-align: center; " id="neuro-1172932616"><!-- Tag ID: neurochispas_leaderboard_3 -->
+                        
+                        </div>
+                </div>
+
+                
+            </div>
+            </div>
+        </section>
+        <section class="s10" id="s10">
+            <br>
+              <h5 class="card-title">INTEGRAR DE DETERMINAR EL AREA</h5>
+              <div class="text">
+                <h6>Integrales para Determinar el Área</h6>
+                <p>
+                Las integrales definidas se utilizan ampliamente en el cálculo para determinar áreas bajo curvas, entre curvas, y áreas limitadas por funciones y ejes coordenados. Este método se basa en la suma infinita de rectángulos que aproximan la región de interés.
+                </p>
+                
+                <h6>Cálculo del Área Bajo una Curva</h6>
+                <p>
+                Para encontrar el área bajo una curva y sobre el eje x en un intervalo <i>[a, b]</i>, utilizamos la integral definida:
+                </p>
+                <p class="formula">
+                Área = ∫<sub>a</sub><sup>b</sup> f(x) dx
+                </p>
+                <p>
+                Donde <i>f(x)</i> es la función de la curva, y <i>a</i> y <i>b</i> son los límites inferior y superior, respectivamente.
+                </p>
+                
+                <h6>Área entre dos Curvas</h6>
+                <p>
+                Cuando se desea calcular el área entre dos curvas, por ejemplo, <i>y = f(x)</i> y <i>y = g(x)</i>, el área está dada por la integral:
+                </p>
+                <p class="formula">
+                Área = ∫<sub>a</sub><sup>b</sup> [f(x) - g(x)] dx
+                </p>
+                <p>
+                En este caso, <i>f(x)</i> debe ser mayor o igual a <i>g(x)</i> en el intervalo <i>[a, b]</i>. Si no lo es, se toma el valor absoluto de la diferencia.
+                </p>
+                
+                <h6>Propiedades Importantes</h6>
+                <p>
+                1. Si la curva se encuentra por debajo del eje x en algún intervalo, el área calculada será negativa. Para obtener el área total, se toma el valor absoluto de la integral.
+                </p>
+                <p>
+                2. Es fundamental identificar los puntos de intersección entre las curvas para determinar correctamente los límites de integración.
+                </p>
+                <p>
+                Las integrales para determinar el área son una herramienta poderosa en aplicaciones prácticas como física, ingeniería y economía, ya que permiten medir magnitudes geométricas con precisión.
+                </p>
+                
+            </div>    
+    </section>
+        <section class="s4" id="s4">
+          <h3 class="titulo">Formulario</h3>
+        </section>
+        <section class="s5"></section>
+        <section class="s6"></section>
+       
+        <section class="s9" id="s9">
+            <h5 class="card-title">Integrar de Volumenes</h5>
+            <div class="text">
+                <h6>Integrales para Determinar Volúmenes</h6>
+<p>
+El cálculo integral permite determinar volúmenes de sólidos de revolución o regiones tridimensionales generadas al rotar una curva o una región alrededor de un eje. Este método se utiliza en geometría, física y otras disciplinas para obtener volúmenes precisos de figuras tridimensionales.
+</p>
+
+<h6>Método de los Discos</h6>
+<p>
+El método de los discos se aplica cuando un sólido se genera al rotar una función continua <i>f(x)</i> alrededor del eje x. El volumen se calcula como:
+</p>
+<p class="formula">
+Volumen = π ∫<sub>a</sub><sup>b</sup> [f(x)]² dx
+</p>
+<p>
+Aquí, <i>[a, b]</i> son los límites de integración, y <i>f(x)</i> representa el radio del disco en cada punto.
+</p>
+
+<h6>Método de las Arandelas</h6>
+<p>
+Este método se utiliza cuando el sólido tiene un vacío en el centro, como un tubo. El volumen está dado por:
+</p>
+<p class="formula">
+Volumen = π ∫<sub>a</sub><sup>b</sup> ([R(x)]² - [r(x)]²) dx
+</p>
+<p>
+Donde <i>R(x)</i> es el radio exterior y <i>r(x)</i> es el radio interior.
+</p>
+
+<h6>Método de las Capas Cilíndricas</h6>
+<p>
+Este método es útil cuando la región se rota alrededor del eje y o de una línea vertical distinta. El volumen se calcula como:
+</p>
+<p class="formula">
+Volumen = 2π ∫<sub>a</sub><sup>b</sup> x f(x) dx
+</p>
+<p>
+En este caso, <i>x</i> representa la distancia al eje de rotación, y <i>f(x)</i> es la altura de la función.
+</p>
+
+<h6>Consideraciones Adicionales</h6>
+<p>
+1. Es esencial identificar correctamente el eje de rotación y ajustar las funciones y límites de integración en consecuencia.
+</p>
+<p>
+2. Si el eje de rotación no es uno de los ejes coordenados, las fórmulas deben adaptarse para reflejar el desplazamiento.
+</p>
+<p>
+Las integrales para determinar volúmenes son herramientas fundamentales en ingeniería y ciencias aplicadas, ya que permiten modelar y calcular con precisión volúmenes de estructuras y sólidos complejos.
+</p>
+
+            </div>
+        </section>
+        <section class="s11" id="s11">
+            <h3 class="titulo">Formulario</h3>
+          </section> <section class="s7"></section>
+    </div>
+</body>
+</html>

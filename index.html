@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Calculo</title>
+</head>
+<body>
+    
+    <div class="head">
+        <div class="logo">
+            <a href="#"><img src="/img/integral.png" alt="" width="35" height="40"></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="problemas.html">Problemas</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">Inicio</h2>
+        <p class="text1"> 
+            El cálculo integral es una rama de las matemáticas que se utiliza para analizar y resolver problemas relacionados con áreas, volúmenes y otros conceptos que implican la acumulación de cantidades. A continuación, se describen los temas relacionados con integrar de forma definida, determinar el área, y determinar volúmenes:
+        </p>
+
+    </header>
+
+    <section class="content sau">
+        <h2 class="title">Teoria</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae adipisci, minima ullam dolor nulla vel. Ullam ratione sapiente omnis quod, culpa impedit? Magnam magni ex eveniet delectus vitae! Dignissimos, aspernatur?</p>
+        <div class="box-container">
+            <div class="box">
+                <h3>Integrar de forma definida</h3>
+                <p>Una integral definida calcula el área bajo la curva de una función <br><br> 
+                    𝑓(𝑥)
+                    f(x) entre dos límites a y b. Se expresa como: <br><br>
+        
+                    ∫
+                    𝑎
+                    𝑏
+                    𝑓
+                    (
+                    𝑥
+                    )
+                     
+                    𝑑
+                    𝑥 <br> <br>
+                    b = el limite superior <br> <br>
+                    a  = el limite inferior
+                </p>
+            </div>
+            <div class="box">
+                <h3>Determinar el área</h3>
+                <p>El área bajo una curva o entre dos curvas puede calcularse utilizando la integral definida. <br>
+
+                    Área bajo una curva: <br>
+                    Si la función 
+                    𝑓
+                    (
+                    𝑥
+                    )
+                    f(x) está por encima del eje <br>
+                    x en el intervalo 
+                    [
+                    𝑎
+                    ,
+                    𝑏
+                    ], el área es: <br><br>
+                    
+                    Area
+                    =
+                    ∫
+                    𝑎
+                    𝑏
+                    𝑓
+                    (
+                    𝑥
+                    )
+                     
+                    𝑑
+                    𝑥
+                </p>
+            </div>
+            <div class="box">
+                <h3>Determinar volúmenes</h3>
+                <p>Los volúmenes de sólidos generados por la rotación de una curva alrededor de un eje pueden calcularse usando integrales definidas. <br>
+
+                </p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="content about" >
+        <h2 class="title">Integrar de Forma Definida</h2>
+        <p>
+            La integración definida permite calcular el área bajo una curva de una función 
+            <code>f(x)</code> entre dos límites <code>a</code> y <code>b</code>. Se representa como: 
+            <code>∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) - F(a)</code>, donde <code>F(x)</code> es la antiderivada 
+            de <code>f(x)</code>. Por ejemplo, para calcular <code>∫<sub>1</sub><sup>3</sup> x² dx</code>, la antiderivada de 
+            <code>x²</code> es <code>F(x) = x³ / 3</code>, y el resultado sería 
+            <code>(3³ / 3) - (1³ / 3) = 26 / 3</code>.
+        </p>
+
+    </section>
+
+    <section class="content sau" >
+        <h2 class="title">Determinar el Área</h2>
+        <p>
+            El área bajo una curva o entre dos curvas se calcula usando una integral definida. Para el área bajo una 
+            curva: <code>∫<sub>a</sub><sup>b</sup> f(x) dx</code>. Para el área entre dos curvas: 
+            <code>∫<sub>a</sub><sup>b</sup> [f(x) - g(x)] dx</code>, donde <code>f(x)</code> está por encima de <code>g(x)</code>. 
+            Por ejemplo, al calcular el área entre <code>f(x) = x²</code> y <code>g(x) = x</code> en <code>[0, 1]</code>, 
+            la diferencia sería <code>x² - x</code> y la integral resulta en <code>∫<sub>0</sub><sup>1</sup> (x² - x) dx</code>, dando un 
+            área de <code>-1/6</code>.
+        </p>
+    
+    </section>
+
+    <section class="content about" >
+        <h2 class="title">Determinar Volúmenes</h2>
+        <p>
+            Para calcular volúmenes de sólidos de revolución se utilizan integrales con los métodos de disco o 
+            arandela. Con el <strong>Método del Disco</strong>, la fórmula es: 
+            <code>V = π ∫<sub>a</sub><sup>b</sup> [f(x)]² dx</code>. Con el <strong>Método de la Arandela</strong>, es: 
+            <code>V = π ∫<sub>a</sub><sup>b</sup> ([f(x)]² - [g(x)]²) dx</code>. Por ejemplo, al calcular el volumen generado 
+            al rotar <code>f(x) = x²</code> en <code>[0, 1]</code> alrededor del eje <code>x</code>, la integral sería 
+            <code>V = π ∫<sub>0</sub><sup>1</sup> (x²)² dx = π ∫<sub>0</sub><sup>1</sup> x⁴ dx</code>, dando un resultado de 
+            <code>V = π/5</code>.
+        </p>
+
+    </section>
+    
+</body>
+</html>

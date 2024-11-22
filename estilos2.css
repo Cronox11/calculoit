@@ -1,0 +1,166 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100vh 140vh 140vh 100vh 100vh 100vh 100vh;
+}
+.s1{
+    background-image: url('/img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: 1/1/2/7;
+}
+p{
+    margin: 10px;
+}
+.formula{
+    margin: 10px;
+    font-size: 20px;
+    text-shadow: 3px 3px green;
+}
+.pasos-form{
+    margin-left: 50vh;
+    font-size: 20px;
+    text-shadow: 3px 3px green;
+}
+.pasos-ej{
+    font-size: 20px;
+    text-shadow: 3px 3px green;
+}
+h6{
+    margin: 15px;
+}
+
+.definidaej1{
+    width: 600px;
+    border:  3px solid rgb(5, 4, 10);
+    background-color: rgb(35, 65, 98);
+    color: #fff;
+    display: flex;
+    padding-left: 15px;
+    border-radius: 7px;
+    justify-content: space-evenly;
+}
+.definidaej1 #despliegue , #despliegue1 , #despliegue2{
+    right:0;
+    cursor: pointer;
+}
+
+.definidaej1 #oculto , #oculto1 , #oculto2{
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.problema , .problema1 , .problema2{
+    background-color: rgb(35, 65, 98);
+    display: none;
+}
+
+.navbar{
+    grid-area: 1/1/2/7;
+}
+.text{
+    color: #fff;
+}
+.ac{
+    height: 65px;
+    width: 60px;
+}
+.anclas{
+    background-color: #b5b5b5;
+    border-radius: 10px;
+    position: fixed;
+}
+.s3{
+    grid-area: 1/5/2/7;
+    padding-top: 85vh;
+    padding-left: 19vh;
+    z-index: 1;
+}
+.s2{
+    grid-area: 2/1/3/7;
+    background: black;
+    background: url('/img/fondo3.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card-title{
+    font-size: 30px;
+    padding-top: 5px;
+    text-align: center;
+    color: #fff;
+}
+.s4{
+    grid-area: 5/1/6/7;
+    background-color: black;
+}
+.info{
+    padding-top: 5%;
+    padding-left: 20px;
+    color: white;
+}
+.titulo{
+    color: white;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 45px;
+}
+.s5{
+    background-image: url('/img/definida1.webp');
+    background-size:contain;
+    background-repeat: no-repeat;
+    grid-area: 2/1/3/7;
+    height: 29vh;
+    width: 58vh;
+    margin-top: 35vh;
+    margin-left: 140vh;
+}
+.s6{
+    background-image: url('/img/formareas.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 65%;
+    width: 75%;
+    grid-area: 5/1/6/7;
+    margin-top: 10%;
+    margin-left: 80vh;
+}
+.s7{
+    background-image: url('/img/formvolumen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35%;
+    width: 45%;
+    grid-area: 7/1/8/5;
+    margin-top: 40%;
+    margin-left: 20px;
+}
+.s8{
+    grid-area: 3/1/4/7;
+    background: black;
+}
+.carousel{
+height: 100vh;
+z-index: 0;
+}
+.carousel-item{
+    height: 100vh;
+}
+.s10{
+    grid-area: 4/1/5/7;
+    background: black;
+    background: url('/img/fondo3.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.s9{
+    grid-area: 6/1/7/7;
+    background: black;
+    background: url('/img/fondo3.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.s11{
+    grid-area: 7/1/8/7;
+    background-color: black;
+}
